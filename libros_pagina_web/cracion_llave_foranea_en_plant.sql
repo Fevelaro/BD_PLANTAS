@@ -1,0 +1,36 @@
+ALTER TABLE dbo.Plant
+   ADD CONSTRAINT FK_Loc_id FOREIGN KEY ([Loc ID])
+      REFERENCES dbo.Loc ([Loc ID])
+      ON DELETE CASCADE
+      ON UPDATE CASCADE
+;
+ALTER TABLE dbo.Plant
+   ADD CONSTRAINT FK_Stem_id FOREIGN KEY ([Stem ID])
+      REFERENCES dbo.Stem ([Stem ID])
+      ON DELETE CASCADE
+      ON UPDATE CASCADE
+;
+ALTER TABLE dbo.Plant
+   ADD CONSTRAINT FK_Leaf_id FOREIGN KEY ([Leaf ID])
+      REFERENCES dbo.Leaf ([Leaf ID])
+      ON DELETE CASCADE
+      ON UPDATE CASCADE
+;
+ALTER TABLE dbo.Plant
+   ADD CONSTRAINT FK_Fruit_id FOREIGN KEY ([Fruit ID])
+      REFERENCES dbo.Fruit ([Fruit ID])
+      ON DELETE CASCADE
+      ON UPDATE CASCADE
+;
+ALTER TABLE dbo.Plant
+   ADD CONSTRAINT FK_Flower_id FOREIGN KEY ([Flower ID])
+      REFERENCES dbo.Flower ([Flower ID])
+      ON DELETE CASCADE
+      ON UPDATE CASCADE
+;
+ALTER TABLE dbo.Plant
+   ADD CONSTRAINT FK_Uso_id FOREIGN KEY ([Uso ID])
+      REFERENCES dbo.[Uso Medicinal] ([Uso ID])
+      ON DELETE CASCADE
+      ON UPDATE CASCADE
+;
